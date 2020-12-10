@@ -1,6 +1,8 @@
 class Todos {
 
-  add(todoItem) {
-    return todoItem
+  add(toDoItem) {
+    const listOfTodos = []
+    listOfTodos.push(toDoItem)
+    return `Todo Added. Todo remaining: ${listOfTodos}`
   }
 }
