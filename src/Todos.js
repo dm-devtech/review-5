@@ -18,13 +18,17 @@ class Todos {
     return `Todo Added. Todos remaining: ${this.joinList()}`
     }
 
+  deletionMessage() {
+    if(this.list.length === 0) {
+      return "You dont have any todos!"
+    } else {
+      return `Todos remaining: ${this.joinList()}`
+    }
+  }
+
   done(toDoItem) {
     this.deleteTodo(toDoItem)
-      if(this.list.length === 0) {
-        return "You dont have any todos!"
-      } else {
-        return `Todos remaining: ${this.joinList()}`
-      }
-    }
-
+    return this.deletionMessage()
   }
+
+}
