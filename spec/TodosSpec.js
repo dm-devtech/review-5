@@ -29,4 +29,10 @@ describe("Todos", function() {
     })
   })
 
+  describe("edge cases", function() {
+    it("throws error when the wrong format is given", function() {
+      expect(function() {todoList.add(1)}).toThrowError("To do must be in the form of a string")
+    })
+  })
+
 });

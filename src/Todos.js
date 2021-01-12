@@ -14,6 +14,7 @@ class Todos {
   }
 
   add(toDoItem) {
+    if(typeof (toDoItem) != "string") throw new Error('To do must be in the form of a string')
     this.list.push(toDoItem)
     return `Todo Added. Todos remaining: ${this.joinList()}`
     }
