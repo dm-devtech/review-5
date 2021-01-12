@@ -11,6 +11,6 @@ describe("Todos", function() {
 
   it("adds multiple todos and returns them", function() {
     todoList.add("wash the dishes")
-    expect(todoList.add("clean the car")).toEqual("Todo Added. Todos remaining: wash the dishes,clean the car")
+    expect(todoList.add("clean the car")).toEqual("Todo Added. Todos remaining: wash the dishes, clean the car")
   })
 });
