@@ -9,14 +9,17 @@ class Todos {
     return allTodos
   }
 
+  deleteTodo(index) {
+    this.list.splice(index-1, 1)
+  }
+
   add(toDoItem) {
     this.list.push(toDoItem)
     return `Todo Added. Todos remaining: ${this.joinList()}`
     }
 
   done(toDoItem) {
-    let element = toDoItem - 1
-    this.list.splice(element, 1)
+    this.deleteTodo(toDoItem)
       if(this.list.length === 0) {
         return "You dont have any todos!"
       } else {
