@@ -1,7 +1,7 @@
 - Info gathering.
 
 command line to do apps
-build a to do app
+build a to-do app
 
 add and complete to-dos
 
