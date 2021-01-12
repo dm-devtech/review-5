@@ -1,23 +1,21 @@
 - Info gathering.
 
-command line to do apps
-build a to-do app
+A command line app to manage a list of To-Dos
 
-add and complete to-dos
+The user adds and completes to-dos
 
-input
-command with argument
-to add = add("wash the car") = 1
+Input is a command with an argument
+To add = add("wash the car") = 1
 done = done(1)
 
-output
+Output
 indication to-do has been added
 as well as full list of to-dos
 done - if all Completed
 
-input = 1 Wash the car 
+Input = 1 Wash the car
 input to complete = done 1
- output = Completed todo "Wash the car".
+output = Completed todo "Wash the car".
 Your Todos:
 You don't have any todos!
 
